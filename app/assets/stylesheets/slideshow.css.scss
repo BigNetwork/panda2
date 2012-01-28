@@ -1,0 +1,21 @@
+body {
+  color: black;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-image: url(danzorz1.png);
+  background-color: #ed8ca4;
+}
+ 
+#output {
+  text-align: center;
+  width: 550px;
+  left: 350px;
+  top: 250px;
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 36px;
+}
+
+marquee {
+	line-height: 150%;
+}

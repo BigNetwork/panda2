@@ -1,0 +1,15 @@
+<h1>Listing announcements</h1>
+
+<ul id="announcements">
+<% @announcements.each do |announcement| %>
+	<li id="announcement_<%= announcement.id %>">
+		<span class="handle">[drag]</span>
+		<%= link_to announcement.name, announcement %>
+		(<%= link_to 'ändra', edit_announcement_path(announcement) %>)
+	</li>
+<% end %>
+</ul>
+
+<br />
+
+<%= link_to 'New Announcement', new_announcement_path %>
